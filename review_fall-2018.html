@@ -196,12 +196,34 @@ $(document).ready(function () {
 </div>
 
 
-<div id="project-1-indian-exports" class="section level1">
-<h1>Project 1: Indian Exports</h1>
+<div id="project-1-deaths-over-the-course-of-the-syrian-civil-war" class="section level1">
+<h1>Project 1: Deaths over the course of the Syrian Civil War</h1>
+<p>Project title: Analysis of the deaths over the course of the Syrian Civil War</p>
+<p>Author: Cayanne Chachati</p>
+<p>Link: <a href="https://cayanne.shinyapps.io/syrian_civil_war/" class="uri">https://cayanne.shinyapps.io/syrian_civil_war/</a></p>
+<div id="pros" class="section level3">
+<h3>Pros</h3>
+<ul>
+<li>Filters and subsetting: in both the main analyses tabs, you can filter for parameters like cause of death, gender, adulthood status, etc. and observe the group you wish to or choose your own subset provinces</li>
+<li>There’s also proper guidance on how to use interactive plots</li>
+</ul>
+</div>
+<div id="cons" class="section level3">
+<h3>Cons</h3>
+<ul>
+<li>Error not fixed: in filtered deaths, if you seek to filter by affiliation, Shiny throws an error: <code>Error: An error has occurred. Check your logs or contact the app author for clarification.</code></li>
+<li>The plots don’t gain much from being interactive other than the ability to zoom in on them</li>
+<li>The plot on the home tab makes no sense to me: it’s a dotplot with time on x axis and things like “international politics” on the Y axis–what does it mean for a year to have dot? Presumably these political events happened with more complex timelines that just one dot a year?</li>
+<li>Second and third tabs are identical: you have to option to filter by province and look at the line plot or go to another tab and look at the barplot. - I guess the bar plot lets you choose fewer provinces but maybe instead of having a drop-down menu, each parameter could have been a tab with further exploration of the data?</li>
+</ul>
+</div>
+</div>
+<div id="project-2-indian-exports" class="section level1">
+<h1>Project 2: Indian Exports</h1>
 <p>Project title: Analysis of Indian exports between 2014 and 2017.</p>
 <p>Author: Rana Chandra Bansal</p>
 <p>Link: <a href="https://ranban.shinyapps.io/Shiny/" class="uri">https://ranban.shinyapps.io/Shiny/</a></p>
-<div id="pros" class="section level3">
+<div id="pros-1" class="section level3">
 <h3>Pros</h3>
 <ul>
 <li>Analyzing data accross multiple parameters: the various tabs cleanly sort out how Indian exports varied accross different lenses of analyses like top partners, top commodities, and some specific products</li>
@@ -209,35 +231,13 @@ $(document).ready(function () {
 <li>The UI/UX of the page is very cool; very intuitive and aesthetic design</li>
 </ul>
 </div>
-<div id="cons" class="section level3">
+<div id="cons-1" class="section level3">
 <h3>Cons</h3>
 <ul>
 <li>Choice of visualization: Though interactive, none of the visualizations are otherwise too attractive and interesting–bar plots and tables don’t perhaps best convey the information to users</li>
 <li>Scale of graphs/illegible scatter plot: in both the scatterplots of iron and steel and coffee, there are too many points clustered together to be able to distinguish; there could have been fewer countries chosen and a log y scale used</li>
 <li>Geospatial analysis would have been cool here: the home tab has a map but it just seems like an empty world map attached through an API</li>
 <li>Choice of link just being a shinyapp.com/Shiny is a bad design choice for naming the link</li>
-</ul>
-</div>
-</div>
-<div id="project-2-deaths-over-the-course-of-the-syrian-civil-war" class="section level1">
-<h1>Project 2: Deaths over the course of the Syrian Civil War</h1>
-<p>Project title: Analysis of the deaths over the course of the Syrian Civil War</p>
-<p>Author: Cayanne Chachati</p>
-<p>Link: <a href="https://cayanne.shinyapps.io/syrian_civil_war/" class="uri">https://cayanne.shinyapps.io/syrian_civil_war/</a></p>
-<div id="pros-1" class="section level3">
-<h3>Pros</h3>
-<ul>
-<li>Filters and subsetting: in both the main analyses tabs, you can filter for parameters like cause of death, gender, adulthood status, etc. and observe the group you wish to or choose your own subset provinces</li>
-<li>There’s also proper guidance on how to use interactive plots</li>
-</ul>
-</div>
-<div id="cons-1" class="section level3">
-<h3>Cons</h3>
-<ul>
-<li>Error not fixed: in filtered deaths, if you seek to filter by affiliation, Shiny throws an error: <code>Error: An error has occurred. Check your logs or contact the app author for clarification.</code></li>
-<li>The plots don’t gain much from being interactive other than the ability to zoom in on them</li>
-<li>The plot on the home tab makes no sense to me: it’s a dotplot with time on x axis and things like “international politics” on the Y axis–what does it mean for a year to have dot? Presumably these political events happened with more complex timelines that just one dot a year?</li>
-<li>Second and third tabs are identical: you have to option to filter by province and look at the line plot or go to another tab and look at the barplot. - I guess the bar plot lets you choose fewer provinces but maybe instead of having a drop-down menu, each parameter could have been a tab with further exploration of the data?</li>
 </ul>
 </div>
 </div>

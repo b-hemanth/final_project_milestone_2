@@ -9,7 +9,32 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Project 1: Indian Exports
+# Project 1: Deaths over the course of the Syrian Civil War
+
+Project title: Analysis of the deaths over the course of the Syrian Civil War
+
+Author: Cayanne Chachati
+
+Link: https://cayanne.shinyapps.io/syrian_civil_war/
+
+
+### Pros
+
+- Filters and subsetting: in both the main analyses tabs, you can filter for parameters like cause of death, gender, adulthood status, etc. and observe the group you wish to or choose your own subset provinces
+- There's also proper guidance on how to use interactive plots
+
+
+### Cons
+
+- Error not fixed: in filtered deaths, if you seek to filter by affiliation, Shiny throws an error: `Error: An error has occurred. Check your logs or contact the app author for clarification.`
+- The plots don't gain much from being interactive other than the ability to zoom in on them
+- The plot on the home tab makes no sense to me: it's a dotplot with time on x axis and things like "international politics" on the Y axis--what does it mean for a year to have dot? Presumably these political events happened with more complex timelines that just one dot a year?
+- Second and third tabs are identical: you have to option to filter by province and look at the line plot or go to another tab and look at the barplot. 
+        - I guess the bar plot lets you choose fewer provinces but maybe instead of having a drop-down menu, each parameter could have been a tab with further exploration of the data?
+        
+        
+        
+# Project 2: Indian Exports
 
 Project title: Analysis of Indian exports between 2014 and 2017.
 
@@ -32,26 +57,3 @@ Link: https://ranban.shinyapps.io/Shiny/
 - Geospatial analysis would have been cool here: the home tab has a map but it just seems like an empty world map attached through an API
 - Choice of link just being a shinyapp.com/Shiny is a bad design choice for naming the link
 
-
-# Project 2: Deaths over the course of the Syrian Civil War
-
-Project title: Analysis of the deaths over the course of the Syrian Civil War
-
-Author: Cayanne Chachati
-
-Link: https://cayanne.shinyapps.io/syrian_civil_war/
-
-
-### Pros
-
-- Filters and subsetting: in both the main analyses tabs, you can filter for parameters like cause of death, gender, adulthood status, etc. and observe the group you wish to or choose your own subset provinces
-- There's also proper guidance on how to use interactive plots
-
-
-### Cons
-
-- Error not fixed: in filtered deaths, if you seek to filter by affiliation, Shiny throws an error: `Error: An error has occurred. Check your logs or contact the app author for clarification.`
-- The plots don't gain much from being interactive other than the ability to zoom in on them
-- The plot on the home tab makes no sense to me: it's a dotplot with time on x axis and things like "international politics" on the Y axis--what does it mean for a year to have dot? Presumably these political events happened with more complex timelines that just one dot a year?
-- Second and third tabs are identical: you have to option to filter by province and look at the line plot or go to another tab and look at the barplot. 
-        - I guess the bar plot lets you choose fewer provinces but maybe instead of having a drop-down menu, each parameter could have been a tab with further exploration of the data?
