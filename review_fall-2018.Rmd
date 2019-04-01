@@ -45,8 +45,8 @@ Link: https://ranban.shinyapps.io/Shiny/
 
 ### Pros
 
-- Analyzing data accross multiple parameters: the various tabs cleanly sort out how Indian exports varied accross different lenses of analyses like top partners, top commodities, and some specific products
-- Use of interactive visualization: in the various tabs, you are able to search accross specific years and goods to find specific information you need, so that's useful
+- Analyzing data across multiple parameters: the various tabs cleanly sort out how Indian exports varied across different lenses of analyses like top partners, top commodities, and some specific products
+- Use of interactive visualization: in the various tabs, you are able to search across specific years and goods to find specific information you need, so that's useful
 - The UI/UX of the page is very cool; very intuitive and aesthetic design
 
 
